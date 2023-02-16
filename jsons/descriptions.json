@@ -1,0 +1,68 @@
+{
+	"information": [
+		{
+			"id": 1,
+			"name": "Huawei nova Y61 4/64Gb",
+			"price": 9990,
+			"description": "Смартфон Huawei nova Y61 в эргономичном корпусе с безрамочным дисплеем — устройство с высокой производительностью и мощной батареей.",
+			"rating": 3.89,
+			"picture": ["https://sun9-north.userapi.com/sun9-78/s/v1/ig2/aWecUukeZn2RwN5cTf3LLFPo77AajRiDb9YU3Iv-HFFJWfQGp4HkhxS-j2wx-puv-hjd4j1b_vN257RqwdQpysn7.jpg?size=636x807&quality=96&type=album", "https://sun9-east.userapi.com/sun9-31/s/v1/ig2/h3XCEcXdoOQ40OWmiWIW78Vq48dqPeGIKRsP1EHuUhJn7jGbshdSb8uIGX1Enp_g3oKJHIWLFLd5S9THo5RMGTNL.jpg?size=378x807&quality=96&type=album" , "https://sun9-east.userapi.com/sun9-36/s/v1/ig2/9UfaygULIN72EvxpqSqKlJQV7XhNV6eQ5AVXt8gIjO5OZQB_E8XwPjUz6_LzB-w_N3dMHmkOqLoJLqBWac9p-_Vf.jpg?size=378x807&quality=96&type=album"]
+		},
+		{
+			"id": 2,
+			"name": "REALME C25s 4/64Gb",
+			"price": 9990,
+			"description": "Смартфон REALME C25s создан для уверенных пользователей. Производительный процессор справится с загрузкой любых приложений, необходимых для работы, связи или развлечений.",
+			"rating": 4.8,
+			"picture": ["https://sun1.userapi.com/sun1-90/s/v1/ig2/emQtyjEQhbqo7mx2QV-vhYIBL1KBZpp1znedA59FR2wU0ngRgfYg4MvaBdfg2RTRI-WHyrElpjF0b08WGfvkSRon.jpg?size=641x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-40/s/v1/ig2/bw4Wvmp20CT1x0q_CL5reWB6RwQ_wfXaBeSp19hiPFRMHQwvTRCcY_YitTRL1phyZP7QXbd7trLniKo3wT6aHm2l.jpg?size=373x807&quality=96&type=album","https://sun1.userapi.com/sun1-98/s/v1/ig2/7qkXHD1jTml48dZLA5pj0JabDSdQh3oyMBZIczyTlW-9hW4e9WB4jdk3Z4qVbz9PBo-NUaHgQBakH5QevONsy4xQ.jpg?size=372x807&quality=96&type=album"]
+		},
+		{
+			"id": 3,
+			"name": "Apple iPhone 11 64Gb",
+			"price": 42190,
+			"description": "Apple iPhone 11 — современный смартфон с процессором A13 Bionic. Корпус выполнен из прочного стекла и алюминия. 6,1-дюймовый IPS-дисплей Liquid Retina автоматически адаптирует уровень яркости в зависимости от освещения. Технология Face ID повышает безопасность личной информации — ваши данные останутся под защитой.",
+			"rating": 4.7,
+			"picture": ["https://sun9-west.userapi.com/sun9-15/s/v1/ig2/nrwcHiuaFYD5q3-y3TXpy6Oy6RKLInTo4SRBQYwcKoPzWU7grw5ScKNmfg6VHCCzZd2H58kaEfE3UsqmP8bAsDE4.jpg?size=590x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-40/s/v1/ig2/EmGMnj7lV87XkR2flJszRWfJa1QlJok9bVxcN8xOlimSUQL2M4Or3i2o-Wa3aKMsGYYOr8U93uFsyIsm9OqJfHTk.jpg?size=292x807&quality=96&type=album","https://sun9-east.userapi.com/sun9-34/s/v1/ig2/_0RmMoW7YXvogcQECm0vkRhO3aTgSzvqpeXFweU1rrC-BndzRywWrKFtpQNssqFNADdHIzFqh1YT0C6yt5sa-3X8.jpg?size=705x807&quality=96&type=album"]
+		},
+		{
+			"id": 4,
+			"name": "Apple iPhone 12 128Gb",
+			"price": 59290,
+			"description": "Apple iPhone 12 работает на базе процессора A14 Bionic. 6,1-дюймовый OLED-дисплей надежно защищен ударопрочным стеклом Ceramic Shield — его нельзя случайно поцарапать или испортить каким-либо другим способом. Нанокерамическое покрытие гарантирует в 4 раза большую устойчивость к повреждениям при падении.",
+			"rating": 5,
+			"picture": ["https://sun9-east.userapi.com/sun9-26/s/v1/ig2/8VXorLnK3xw89nLXiEoqoIrXpaJlHNpnVU5HNTaXB_zibjLmkPpg3yfMj4eb9bGIpy2iZF6K-UrtuFj1-E1VrWyq.jpg?size=592x807&quality=96&type=album","https://sun9-east.userapi.com/sun9-29/s/v1/ig2/-Po7Gqt0ma8eo-XahUvFVtZXARWB3Er_9wg8bDuAdlal3EaWKKfOAJhWPtr9IxAiZuRTHGs5QHiEN9KbFMwHCORm.jpg?size=401x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-7/s/v1/ig2/3XDDbKywCGd3zLTklkBxR2_T3Pp9nUqsQ8qtHZEUahRDl85MD3matXRJhtwMst6geioQoyOC_lJBEUyieeK13Yjt.jpg?size=807x806&quality=96&type=album"]
+		},
+		{
+			"id": 5,
+			"name": "HAIER I4 16Gb",
+			"price": 3696,
+			"description": "Бюджетный смартфон",
+			"rating": 3.3,
+			"picture": ["https://sun9-east.userapi.com/sun9-41/s/v1/ig2/EXrRQ4IbveJdCNHlwbmI6fbbOn-4xo1p-aQ-_3oWbmdUKDXvUQzkqbOQqmxI3SajmVA-56DQuuBqhH_FGbrSnwFW.jpg?size=653x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-53/s/v1/ig2/XYgXIdLWrvvorPPYWeNh7oCuV6m7D_fukLVVmo3Jzo6eGXZsGSbgd9CoBmr7Yc9giRRNVVNexgB3aYA-kwgtfSHA.jpg?size=807x658&quality=96&type=album"]
+		},
+		{
+			"id": 6,
+			"name": "Samsung Galaxy A73 8/256Gb",
+			"price": 34990,
+			"description": "Отличный экран, зарядки хватает на день при активном использовании, производительности хватает для всего. Камера с стабилизацией, снимает приемлемо для данного ценового сегмента.",
+			"rating": 4.9,
+			"picture": ["https://sun9-west.userapi.com/sun9-16/s/v1/ig2/0VfqQ7-rsWS-pVPM58KLlxIb_8Errn4tLEJesCO3BwWDAdKJVOTKoV0jqO4U49P7nHM8DBgMtKIw9C9DzizEl6ba.jpg?size=630x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-46/s/v1/ig2/tkZdZGzZXzU40sHq1Zg04U5mKC61ztlQzU19TBl3QxwN_qfPzZIxOfdxD9SdpWLIQz4yWooeR_XdUHw54irbzUKk.jpg?size=378x807&quality=96&type=album","https://sun9-east.userapi.com/sun9-17/s/v1/ig2/___8EpWzOW7NC-UqSdbktnWdj2Upq9OPoGOvXc_XPCNJjkLQpxLk8iyaegeQTVKn393kzMH2MTYXS_B5VvMjk3tZ.jpg?size=378x807&quality=96&type=album"]
+		},
+		{
+			"id": 7,
+			"name": "Samsung Galaxy S21 FE 8/256Gb",
+			"price": 41340,
+			"description": "Смартфон Samsung Galaxy S21 FE оснащен 6,4-дюймовым Dynamic AMOLED-дисплеем с разрешением 2340×1080 пикселей и частотой обновления 120 Гц. Ударопрочное закаленное стекло Gorilla Glass Victus защищает от царапин и других механических повреждений. Автоматическая регулировка яркости позволяет комфортно работать с устройством под прямыми солнечными лучами и при плохом освещении.",
+			"rating": 4.7,
+			"picture": ["https://sun1.userapi.com/sun1-86/s/v1/ig2/v-uv5y2-bHEcHcsxPjdbjn9FFb3d4Y_2U91hrOVtpYtFaIULPevxI2J_EuJctoQlxedbjfJK-bSKrYPm0SrEsGEo.jpg?size=654x807&quality=96&type=album","https://sun9-east.userapi.com/sun9-20/s/v1/ig2/gJqrimBxHIrEwaGM3JxWNtFazBhPbDE6HIEf6TxYle7yQephlNkjydVpMcWo1qkTGKLejio_WEDMk_NfTjsJakKb.jpg?size=427x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-3/s/v1/ig2/e6DPu9rtsCZws5b02E6JJLpdLcBN18kT0YzKU0mTMDYF48qoTw6Cb-PCMG6jAwmaKr98lZwXz_ELUjeJtpBwyfvt.jpg?size=583x807&quality=96&type=album"]
+		},
+		{
+			"id": 8,
+			"name": "REALME 8 6/128Gb",
+			"price": 19990,
+			"description": "REALME 8 — смартфон для серфинга интернета, запуска требовательных видеоигр и съемки детализированных фотографий. Встроенный высокоскоростной сканер отпечатка пальца под дисплеем поможет защитить данные при краже или потере устройства.",
+			"rating": 4.8,
+			"picture": ["https://sun9-west.userapi.com/sun9-61/s/v1/ig2/eG0xdUJrk5dwwcnbXIHepKqJSarjfp19txnwRXU7u4cdIovogA_cGXyuZKmJgeE0WI6GdkcWk4PXRYXg7ihNWgJo.jpg?size=637x807&quality=96&type=album","https://sun9-east.userapi.com/sun9-76/s/v1/ig2/GeJEIgaqhYbN3k_E36S_8rS1wIwigMnit1Y7KSS62kGswitFFelzcJmALFZXYbxpuW4kuSz6kvybsa5WWi0vRwkY.jpg?size=373x807&quality=96&type=album","https://sun9-west.userapi.com/sun9-56/s/v1/ig2/CHTxtcOFBcbqDwseGLMYcYxzgcSXTGNWRKELeqFTKB87RSeqsaUVfO_nk31FieUbuRlgUDOo-y6RJ_IdJVqSlvBh.jpg?size=373x807&quality=96&type=album"]
+		}
+	]
+}

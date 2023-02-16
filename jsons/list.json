@@ -1,0 +1,52 @@
+{
+	"phones": [
+		{
+			"id": 1,
+			"name": "Huawei nova Y61 4/64Gb",
+			"price": 9990,
+			"picture": "https://sun9-north.userapi.com/sun9-78/s/v1/ig2/aWecUukeZn2RwN5cTf3LLFPo77AajRiDb9YU3Iv-HFFJWfQGp4HkhxS-j2wx-puv-hjd4j1b_vN257RqwdQpysn7.jpg?size=636x807&quality=96&type=album"
+		},
+		{
+			"id": 2,
+			"name": "REALME C25s 4/64Gb",
+			"price": 9990,
+			"picture": "https://sun1.userapi.com/sun1-90/s/v1/ig2/emQtyjEQhbqo7mx2QV-vhYIBL1KBZpp1znedA59FR2wU0ngRgfYg4MvaBdfg2RTRI-WHyrElpjF0b08WGfvkSRon.jpg?size=641x807&quality=96&type=album"
+		},
+		{
+			"id": 3,
+			"name": "Apple iPhone 11 64Gb",
+			"price": 42190,
+			"picture": "https://sun9-west.userapi.com/sun9-15/s/v1/ig2/nrwcHiuaFYD5q3-y3TXpy6Oy6RKLInTo4SRBQYwcKoPzWU7grw5ScKNmfg6VHCCzZd2H58kaEfE3UsqmP8bAsDE4.jpg?size=590x807&quality=96&type=album"
+		},
+		{
+			"id": 4,
+			"name": "Apple iPhone 12 128Gb",
+			"price": 59290,
+			"picture": "https://sun9-east.userapi.com/sun9-26/s/v1/ig2/8VXorLnK3xw89nLXiEoqoIrXpaJlHNpnVU5HNTaXB_zibjLmkPpg3yfMj4eb9bGIpy2iZF6K-UrtuFj1-E1VrWyq.jpg?size=592x807&quality=96&type=album"
+		},
+		{
+			"id": 5,
+			"name": "HAIER I4 16Gb",
+			"price": 3696,
+			"picture": "https://sun9-east.userapi.com/sun9-41/s/v1/ig2/EXrRQ4IbveJdCNHlwbmI6fbbOn-4xo1p-aQ-_3oWbmdUKDXvUQzkqbOQqmxI3SajmVA-56DQuuBqhH_FGbrSnwFW.jpg?size=653x807&quality=96&type=album"
+		},
+		{
+			"id": 6,
+			"name": "Samsung Galaxy A73 8/256Gb",
+			"price": 34990,
+			"picture": "https://sun9-west.userapi.com/sun9-16/s/v1/ig2/0VfqQ7-rsWS-pVPM58KLlxIb_8Errn4tLEJesCO3BwWDAdKJVOTKoV0jqO4U49P7nHM8DBgMtKIw9C9DzizEl6ba.jpg?size=630x807&quality=96&type=album"
+		},
+		{
+			"id": 7,
+			"name": "Samsung Galaxy S21 FE 8/256Gb",
+			"price": 41340,
+			"picture": "https://sun1.userapi.com/sun1-86/s/v1/ig2/v-uv5y2-bHEcHcsxPjdbjn9FFb3d4Y_2U91hrOVtpYtFaIULPevxI2J_EuJctoQlxedbjfJK-bSKrYPm0SrEsGEo.jpg?size=654x807&quality=96&type=album"
+		},
+		{
+			"id": 8,
+			"name": "REALME 8 6/128Gb",
+			"price": 19990,
+			"picture": "https://sun9-west.userapi.com/sun9-61/s/v1/ig2/eG0xdUJrk5dwwcnbXIHepKqJSarjfp19txnwRXU7u4cdIovogA_cGXyuZKmJgeE0WI6GdkcWk4PXRYXg7ihNWgJo.jpg?size=637x807&quality=96&type=album"
+		}
+	]
+}
