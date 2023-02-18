@@ -1,6 +1,6 @@
-package com.example.data.network.model
+package com.example.data.repository.model
 
-data class Phone(
+data class PhoneJson(
     val id: Int,
     val name: String,
     val price: Int,

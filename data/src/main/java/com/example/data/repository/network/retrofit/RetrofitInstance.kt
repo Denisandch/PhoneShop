@@ -1,6 +1,6 @@
-package com.example.data.network.retrofit
+package com.example.data.repository.network.retrofit
 
-import com.example.data.network.PhoneApi
+import com.example.data.repository.network.PhoneApi
 import com.squareup.moshi.Moshi
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
