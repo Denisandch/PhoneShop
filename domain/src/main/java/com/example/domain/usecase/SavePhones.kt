@@ -3,10 +3,12 @@ package com.example.domain.usecase
 import com.example.domain.model.Phone
 import com.example.domain.repository.Repository
 
-class DownloadPhones(
+class SavePhones(
     private val repository: Repository
-) {
-    suspend fun getPhoneList(): List<Phone> {
-        return repository.getPhoneList()
+) : SaveData<List<Phone>> {
+
+    override suspend fun saveData(data: List<Phone>): Boolean {
+        return repository.savePhoneList(data)
     }
+
 }

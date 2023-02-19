@@ -1,3 +1,3 @@
 package com.example.data.repository.network
 
-interface Network : DownloadData, UploadData
+interface Network : DownloadData

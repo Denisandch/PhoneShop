@@ -1,8 +1,9 @@
 package com.example.data.repository.model
 
-data class PhoneJson(
+data class PhoneDescriptionData(
     val id: Int,
     val name: String,
     val price: Int,
-    val picture: String
+    val description: String,
+    val pictures: List<String>
 )

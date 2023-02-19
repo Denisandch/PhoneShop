@@ -1,11 +1,11 @@
 package com.example.data.repository.network
 
-import com.example.data.repository.model.PhoneJson
-import com.example.data.repository.model.PhoneDescriptionJson
+import com.example.data.repository.model.PhoneData
+import com.example.data.repository.model.PhoneDescriptionData
 
 interface DownloadData {
 
-    suspend fun getPhoneList(): List<PhoneJson>
+    suspend fun downloadPhoneList(): List<PhoneData>
 
-    suspend fun getDescription(phoneID: String): PhoneDescriptionJson
+    suspend fun downloadDescription(phoneID: Int): PhoneDescriptionData
 }

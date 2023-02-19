@@ -1,7 +1,7 @@
 package com.example.data.repository
 
-import com.example.data.repository.model.PhoneJson
-import com.example.data.repository.model.PhoneDescriptionJson
+import com.example.data.repository.model.PhoneData
+import com.example.data.repository.model.PhoneDescriptionData
 import com.example.data.repository.network.Network
 import com.example.data.repository.storage.Storage
 import com.example.domain.model.Phone
@@ -14,21 +14,34 @@ class RepositoryImplementation(
     private val storage: Storage
 ) : Repository {
 
-    override suspend fun getPhoneList(): List<Phone> {
-        val buf = network.getPhoneList()
+    override suspend fun downloadPhoneList(): List<Phone> {
+        val buf = network.downloadPhoneList()
         return mapToPhone(buf)
     }
 
-    override suspend fun getDescription(phoneID: String): PhoneDescription {
-        val buf = network.getDescription(phoneID)
+    override suspend fun downloadPhoneDescription(phoneID: Int): PhoneDescription {
+        val buf = network.downloadDescription(phoneID)
         return mapToPhoneDescription(buf)
     }
 
-    override suspend fun cacheData(data: List<Phone>): Boolean {
+    override suspend fun savePhoneList(data: List<Phone>): Boolean {
         TODO("Not yet implemented")
     }
 
-    private fun mapToPhone(buf: List<PhoneJson>): List<Phone> {
+    override suspend fun savePhoneDescription(data: PhoneDescription): Boolean {
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun getPhoneList(): List<Phone> {
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun getPhoneDescription(phoneID: Int): PhoneDescription {
+        TODO("Not yet implemented")
+    }
+
+
+    private fun mapToPhone(buf: List<PhoneData>): List<Phone> {
 
         val mapped = mutableListOf<Phone>()
 
@@ -44,7 +57,7 @@ class RepositoryImplementation(
         return mapped
     }
 
-    private fun mapToPhoneDescription(buf: PhoneDescriptionJson): PhoneDescription {
+    private fun mapToPhoneDescription(buf: PhoneDescriptionData): PhoneDescription {
         return with(buf) {
             PhoneDescription(
                 id, name, price, description, pictures
