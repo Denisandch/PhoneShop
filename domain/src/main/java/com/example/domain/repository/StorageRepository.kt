@@ -8,7 +8,7 @@ interface StorageRepository {
 
     suspend fun savePhoneDescription(data: PhoneDescription): Boolean
 
-    suspend fun getPhoneList(): List<Phone>
+    suspend fun getPhoneList(): List<Phone>?
 
-    suspend fun getPhoneDescription(phoneID: Int): PhoneDescription
+    suspend fun getPhoneDescription(phoneID: Int): PhoneDescription?
 }

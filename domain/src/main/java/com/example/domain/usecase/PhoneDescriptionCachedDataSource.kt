@@ -11,7 +11,7 @@ class PhoneDescriptionCachedDataSource(
         repository.savePhoneDescription(data)
     }
 
-    override suspend fun getData(id: Int): PhoneDescription {
+    override suspend fun getData(id: Int): PhoneDescription? {
         return repository.getPhoneDescription(id)
     }
 }

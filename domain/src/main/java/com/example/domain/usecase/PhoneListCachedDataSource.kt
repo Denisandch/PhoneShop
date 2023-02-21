@@ -10,7 +10,7 @@ class PhoneListCachedDataSource(
         repository.savePhoneList(data)
     }
 
-    override suspend fun getData(id: Int): List<Phone> {
+    override suspend fun getData(id: Int): List<Phone>? {
         return repository.getPhoneList()
     }
 

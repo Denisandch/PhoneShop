@@ -16,7 +16,7 @@ class Repository<T>(
         var result = cachedDataSource.getData()
         if (result == null) {
             result = cloudDataSource.getData()
-            cachedDataSource.saveData(result)
+            cachedDataSource.saveData(result!!)
         }
 
         return result
