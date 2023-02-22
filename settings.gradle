@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "PhoneShop"
-include ':app'
+include ':presentation'
 include ':data'
 include ':domain'

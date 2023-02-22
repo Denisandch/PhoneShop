@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhoneShop</string>
+    <string name="detail_description">Description</string>
+    <string name="detail_price">Price</string>
+</resources>
