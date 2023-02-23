@@ -3,7 +3,10 @@ package com.example.phoneshop.mainscreen.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.bumptech.glide.Glide
 import com.example.domain.model.Phone
 import com.example.phoneshop.R
@@ -11,9 +14,7 @@ import com.example.phoneshop.databinding.OnePhoneItemBinding
 
 class PhoneListAdapter(
     private val listener: PhoneListListener
-) : RecyclerView.Adapter<PhoneListAdapter.PhoneListViewHolder>() {
-
-    private lateinit var phoneList: List<Phone>
+) : ListAdapter<Phone, PhoneListAdapter.PhoneListViewHolder>(DiffCallback) {
 
     inner class PhoneListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -24,6 +25,8 @@ class PhoneListAdapter(
             oneItemHotSalesBinding.apply {
                 onePhoneName.text = phone.name
                 onePhonePrice.text = phone.price.toString()
+
+                //onePhonePicture.load(phone.picture)
                 Glide.with(itemView.context)
                     .load(phone.picture)
                     .into(onePhonePicture)
@@ -43,18 +46,23 @@ class PhoneListAdapter(
         )
     }
 
-    override fun getItemCount(): Int {
-        return phoneList.size
-    }
 
     override fun onBindViewHolder(holder: PhoneListViewHolder, position: Int) {
-        holder.init(phoneList[position])
+        holder.init(getItem(position))
     }
 
-    fun setList(list: List<Phone>) {
-        phoneList = list
-        notifyDataSetChanged()
+    object DiffCallback : DiffUtil.ItemCallback<Phone>() {
+
+        override fun areItemsTheSame(oldItem: Phone, newItem: Phone): Boolean {
+            return oldItem.id == newItem.id
+        }
+
+        override fun areContentsTheSame(oldItem: Phone, newItem: Phone): Boolean {
+            return oldItem.name == newItem.name
+        }
+
     }
+
 }
 
 interface PhoneListListener {

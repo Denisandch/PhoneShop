@@ -6,10 +6,10 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface PhoneApi {
-    @GET("phones")
+    @GET("edf67c189694fdd8067c/phones")
     suspend fun getPhonesList(): List<PhoneData>
 
-    @GET("information/{id}")
+    @GET("44e533a62349960a1310/information/{id}")
     suspend fun getDescription(
         @Path("id") checkedPhoneID: Int
     ): PhoneDescriptionData

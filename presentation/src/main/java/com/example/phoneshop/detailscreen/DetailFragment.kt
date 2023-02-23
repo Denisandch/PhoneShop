@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.navArgs
@@ -31,7 +32,20 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val id = args.phoneID
+
+        sharedViewModel.phoneDescription.observe(viewLifecycleOwner) {
+            viewBinding.apply {
+                phoneName.text = it.name
+                phoneDescription.text = it.description
+                phonePrice.text = it.price.toString()
+            }
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(requireContext(), "${args.phoneID}", Toast.LENGTH_SHORT).show()
+        sharedViewModel.getDescription(args.phoneID - 1)
     }
 
 

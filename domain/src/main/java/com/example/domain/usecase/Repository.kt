@@ -13,10 +13,10 @@ open class Repository<T>(
     }
 
     override suspend fun getData(id: Int): T {
-        var result = cachedDataSource.getData()
+        var result = cachedDataSource.getData(id)
         if (result == null) {
-            result = cloudDataSource.getData()
-            cachedDataSource.saveData(result!!)
+            result = cloudDataSource.getData(id)!!
+            //cachedDataSource.saveData(result!!)
         }
 
         return result

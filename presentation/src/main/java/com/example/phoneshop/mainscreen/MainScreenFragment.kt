@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavDirections
@@ -38,10 +39,13 @@ class MainScreenFragment : Fragment(), PhoneListListener {
 
         Log.i("TAG", "СОЗДАНИЕ ВЬЮМОДЕЛИ")
         viewBinding.recyclerListPhones.adapter = adapter
+
         sharedViewModel.getPhoneList()
-//        sharedViewModel.phoneList.observe(viewLifecycleOwner) {
-//            adapter.setList(it)
-//        }
+
+        sharedViewModel.phoneList.observe(viewLifecycleOwner) {
+            Toast.makeText(requireContext(), "${it.size}", Toast.LENGTH_SHORT).show()
+            adapter.submitList(it)
+        }
     }
 
     override fun phonePicked(phoneID: Int) {

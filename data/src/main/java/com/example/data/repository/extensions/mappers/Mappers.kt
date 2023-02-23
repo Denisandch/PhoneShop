@@ -17,7 +17,7 @@ fun PhoneDescriptionData.mapDataPhoneDescriptionDataToDomain() = PhoneDescriptio
     name = name,
     price = price,
     description = description,
-    pictures = pictures
+    pictures = picture
 )
 
 fun Phone.mapDomainPhoneToData() = PhoneData(
@@ -32,7 +32,7 @@ fun PhoneDescription.mapDomainPhoneDescriptionDataToData() = PhoneDescriptionDat
     name = name,
     price = price,
     description = description,
-    pictures = pictures
+    picture = pictures
 )
 
 fun List<PhoneData>.mapListDataPhoneToDomain(): List<Phone> {
