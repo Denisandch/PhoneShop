@@ -4,14 +4,14 @@ import com.example.domain.model.PhoneDescription
 import com.example.domain.usecase.datasource.MutableDataSource
 
 class PhoneDescriptionCachedDataSource(
-    private val repository: com.example.domain.repository.Repository
+    private val repositoryToData: com.example.domain.repository.RepositoryToData
 ) : MutableDataSource<PhoneDescription> {
 
     override suspend fun saveData(data: PhoneDescription) {
-        repository.savePhoneDescription(data)
+        repositoryToData.savePhoneDescription(data)
     }
 
     override suspend fun getData(id: Int): PhoneDescription? {
-        return repository.getPhoneDescription(id)
+        return repositoryToData.getPhoneDescription(id)
     }
 }

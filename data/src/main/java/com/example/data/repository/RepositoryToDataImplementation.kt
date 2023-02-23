@@ -1,23 +1,23 @@
 package com.example.data.repository
 
+import android.util.Log
 import com.example.data.repository.extensions.mappers.mapDataPhoneDescriptionDataToDomain
 import com.example.data.repository.extensions.mappers.mapDomainPhoneDescriptionDataToData
 import com.example.data.repository.extensions.mappers.mapListDataPhoneToDomain
 import com.example.data.repository.extensions.mappers.mapListPhoneToData
-import com.example.data.repository.model.PhoneData
-import com.example.data.repository.model.PhoneDescriptionData
 import com.example.data.repository.network.Network
 import com.example.data.repository.storage.Storage
 import com.example.domain.model.Phone
 import com.example.domain.model.PhoneDescription
-import com.example.domain.repository.Repository
+import com.example.domain.repository.RepositoryToData
 
-class RepositoryImplementation(
+class RepositoryToDataImplementation(
     private val network: Network,
     private val storage: Storage
-) : Repository {
+) : RepositoryToData {
 
     override suspend fun downloadPhoneList(): List<Phone> {
+        Log.i("Tag", "START DOWNLOAD")
         return network.downloadPhoneList().mapListDataPhoneToDomain()
     }
 

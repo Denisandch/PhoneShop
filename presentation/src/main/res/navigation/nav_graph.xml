@@ -12,11 +12,16 @@
         tools:layout="@layout/fragment_main_screen" >
         <action
             android:id="@+id/action_mainScreenFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
+            app:destination="@id/detailFragment" >
+        </action>
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.phoneshop.detailscreen.DetailFragment"
         android:label="Details"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="phoneID"
+            app:argType="integer" />
+    </fragment>
 </navigation>

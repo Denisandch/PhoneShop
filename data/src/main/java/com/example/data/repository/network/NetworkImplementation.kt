@@ -5,7 +5,7 @@ import com.example.data.repository.model.PhoneDescriptionData
 import com.example.data.repository.network.retrofit.RetrofitInstance
 
 
-class NetworkImplementation : DownloadData {
+class NetworkImplementation : Network {
     override suspend fun downloadPhoneList(): List<PhoneData> {
         return RetrofitInstance.retrofitService.getPhonesList()
     }

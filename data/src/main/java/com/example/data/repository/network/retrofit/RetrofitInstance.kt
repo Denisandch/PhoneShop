@@ -1,6 +1,7 @@
 package com.example.data.repository.network.retrofit
 
 import com.example.data.repository.network.PhoneApi
+import com.example.data.repository.network.URL
 import com.squareup.moshi.Moshi
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -12,7 +13,7 @@ object RetrofitInstance {
         .build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("")
+        .baseUrl(URL.BASE_URL)
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
 

@@ -3,7 +3,7 @@ package com.example.domain.usecase
 import com.example.domain.usecase.datasource.DataSource
 import com.example.domain.usecase.datasource.MutableDataSource
 
-class Repository<T>(
+open class Repository<T>(
     private val cachedDataSource: MutableDataSource<T>,
     private val cloudDataSource: DataSource<T>
 ) : MutableDataSource<T> {

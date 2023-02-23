@@ -4,9 +4,9 @@ import com.example.domain.model.PhoneDescription
 import com.example.domain.usecase.datasource.DataSource
 
 class PhoneDescriptionCloudDataSource(
-    private val repository: com.example.domain.repository.Repository
+    private val repositoryToData: com.example.domain.repository.RepositoryToData
 ) : DataSource<PhoneDescription> {
     override suspend fun getData(id: Int): PhoneDescription {
-        return repository.downloadPhoneDescription(id)
+        return repositoryToData.downloadPhoneDescription(id)
     }
 }
