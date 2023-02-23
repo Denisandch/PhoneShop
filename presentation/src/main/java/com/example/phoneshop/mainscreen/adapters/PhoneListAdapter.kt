@@ -27,6 +27,10 @@ class PhoneListAdapter(
                 onePhonePrice.text = phone.price.toString()
 
                 //onePhonePicture.load(phone.picture)
+
+//                onePhonePicture.load(device.picture.toUri().buildUpon().build()) {
+//                    placeholder(R.drawable.loading_animation)
+//                }
                 Glide.with(itemView.context)
                     .load(phone.picture)
                     .into(onePhonePicture)

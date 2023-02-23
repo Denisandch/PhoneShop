@@ -40,12 +40,12 @@ class MainScreenFragment : Fragment(), PhoneListListener {
         Log.i("TAG", "СОЗДАНИЕ ВЬЮМОДЕЛИ")
         viewBinding.recyclerListPhones.adapter = adapter
 
-        sharedViewModel.getPhoneList()
-
         sharedViewModel.phoneList.observe(viewLifecycleOwner) {
             Toast.makeText(requireContext(), "${it.size}", Toast.LENGTH_SHORT).show()
             adapter.submitList(it)
         }
+
+        sharedViewModel.getPhoneList()
     }
 
     override fun phonePicked(phoneID: Int) {
