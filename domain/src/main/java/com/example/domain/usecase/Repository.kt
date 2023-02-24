@@ -12,11 +12,12 @@ open class Repository<T>(
         cachedDataSource.saveData(data)
     }
 
+    //TODO add checking connection
     override suspend fun getData(id: Int): T {
         var result = cachedDataSource.getData(id)
         if (result == null) {
             result = cloudDataSource.getData(id)!!
-            //cachedDataSource.saveData(result!!)
+            cachedDataSource.saveData(result)
         }
 
         return result

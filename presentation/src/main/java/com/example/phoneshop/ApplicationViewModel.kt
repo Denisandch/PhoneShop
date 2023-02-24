@@ -8,7 +8,6 @@ import com.example.domain.model.Phone
 import com.example.domain.model.PhoneDescription
 import com.example.domain.usecase.PhoneDescriptionRepository
 import com.example.domain.usecase.PhoneListRepository
-import com.example.domain.usecase.Repository
 import com.example.phoneshop.detailscreen.DescriptionData
 import com.example.phoneshop.mainscreen.MainScreenData
 import kotlinx.coroutines.launch

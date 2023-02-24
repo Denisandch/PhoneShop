@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
 import com.bumptech.glide.Glide
 import com.example.domain.model.Phone
 import com.example.phoneshop.R
@@ -26,11 +25,6 @@ class PhoneListAdapter(
                 onePhoneName.text = phone.name
                 onePhonePrice.text = phone.price.toString()
 
-                //onePhonePicture.load(phone.picture)
-
-//                onePhonePicture.load(device.picture.toUri().buildUpon().build()) {
-//                    placeholder(R.drawable.loading_animation)
-//                }
                 Glide.with(itemView.context)
                     .load(phone.picture)
                     .into(onePhonePicture)

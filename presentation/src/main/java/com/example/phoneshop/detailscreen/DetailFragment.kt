@@ -6,11 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.example.phoneshop.ApplicationViewModel
-import com.example.phoneshop.R
 import com.example.phoneshop.databinding.FragmentDetailBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -38,6 +36,9 @@ class DetailFragment : Fragment() {
                 phoneName.text = it.name
                 phoneDescription.text = it.description
                 phonePrice.text = it.price.toString()
+                Glide.with(requireContext())
+                    .load(it.picture[0])
+                    .into(imageView)
             }
         }
     }
@@ -45,7 +46,7 @@ class DetailFragment : Fragment() {
     override fun onStart() {
         super.onStart()
         Toast.makeText(requireContext(), "${args.phoneID}", Toast.LENGTH_SHORT).show()
-        sharedViewModel.getDescription(args.phoneID - 1)
+        sharedViewModel.getDescription(args.phoneID)
     }
 
 

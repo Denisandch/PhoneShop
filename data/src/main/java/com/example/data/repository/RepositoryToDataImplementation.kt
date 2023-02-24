@@ -1,6 +1,5 @@
 package com.example.data.repository
 
-import android.util.Log
 import com.example.data.repository.extensions.mappers.mapDataPhoneDescriptionDataToDomain
 import com.example.data.repository.extensions.mappers.mapDomainPhoneDescriptionDataToData
 import com.example.data.repository.extensions.mappers.mapListDataPhoneToDomain
@@ -17,7 +16,6 @@ class RepositoryToDataImplementation(
 ) : RepositoryToData {
 
     override suspend fun downloadPhoneList(): List<Phone> {
-        Log.i("Tag", "START DOWNLOAD")
         return network.downloadPhoneList().mapListDataPhoneToDomain()
     }
 

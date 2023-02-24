@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.example.data.repository.model.PhoneDescriptionData
 import com.example.data.repository.model.PhoneData
-import com.example.domain.model.PhoneDescription
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type

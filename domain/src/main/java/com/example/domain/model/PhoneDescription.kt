@@ -5,5 +5,5 @@ data class PhoneDescription(
     val name: String,
     val price: Int,
     val description: String,
-    val pictures: List<String>
+    val picture: List<String>
 )
